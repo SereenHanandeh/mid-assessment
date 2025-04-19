@@ -1,0 +1,25 @@
+<nav class="sidebar">
+  <app-logo></app-logo>
+
+  <div class="sidebar-buttons">
+    <button (click)="showComponent('profile')">My Profile</button>
+    <button (click)="showComponent('contactUs')">Contact Us</button>
+    <button (click)="showComponent('about-us')">About Us</button>
+    <button (click)="showComponent('add-user')">Add User</button>
+    <button (click)="showComponent('get-universities')">
+      Get Universities
+    </button>
+  </div>
+
+  @if (currentPage === 'profile') {
+  <app-profile></app-profile>
+  } @else if (currentPage === 'contactUs') {
+  <app-contact-us></app-contact-us>
+  } @else if (currentPage === 'about-us') {
+  <app-about-us></app-about-us>
+  } @else if (currentPage === 'add-user') {
+  <app-add-user></app-add-user>
+  } @else if (currentPage === 'get-universities') {
+  <app-get-universities></app-get-universities>
+  }
+</nav>

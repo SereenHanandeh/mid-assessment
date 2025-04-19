@@ -1,0 +1,19 @@
+<h2>Jordanian Universities</h2>
+
+@if(errorMessage){
+
+<p>{{ errorMessage }}</p>
+
+}
+
+<ul>
+  @for (university of universities; track university.name) {
+  <li>
+    <strong>{{ university.name }}</strong
+    ><br />
+    <a [href]="university.web_pages[0]" target="_blank">
+      {{ university.web_pages[0] }}
+    </a>
+  </li>
+  }
+</ul>

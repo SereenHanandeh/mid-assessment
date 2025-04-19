@@ -1,0 +1,15 @@
+<div class="add-user-form">
+  <h2>Add New User</h2>
+
+  <input type="text" placeholder="First Name" [(ngModel)]="firstName" />
+  <input type="text" placeholder="Last Name" [(ngModel)]="lastName" />
+  <input type="email" placeholder="Email" [(ngModel)]="email" />
+  <input type="password" placeholder="Password" [(ngModel)]="password" />
+  <input
+    type="password"
+    placeholder="Confirm Password"
+    [(ngModel)]="confirmPassword"
+  />
+
+  <button (click)="addUser()">Add User</button>
+</div>

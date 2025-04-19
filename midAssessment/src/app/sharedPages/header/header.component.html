@@ -1,0 +1,15 @@
+<header class="header">
+  <div class="welcome">
+    Welcome, {{ isLoggedIn ? userName : 'Guest' }}
+  </div>
+
+  <div class="header-actions">
+    <button (click)="toggleTheme()">
+      {{ isDarkMode ? "Light Mode" : "Dark Mode" }}
+    </button>
+    <button (click)="toggleLogin()">
+      {{ isLoggedIn ? "Logout" : "Login" }}
+      <app-login></app-login>
+    </button>
+  </div>
+</header>

@@ -1,0 +1,11 @@
+<div class="contact-form">
+    <h2>Contact Us</h2>
+  
+    <input type="text" placeholder="Your Name" [(ngModel)]="name" />
+    <input type="email" placeholder="Your Email" [(ngModel)]="email" />
+    <input type="text" placeholder="Subject" [(ngModel)]="subject" />
+    <textarea placeholder="Your Message" rows="5" [(ngModel)]="message"></textarea>
+  
+    <button (click)="sendMessage()">Send</button>
+  </div>
+  

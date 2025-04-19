@@ -1,0 +1,30 @@
+.sidebar {
+ 
+  background-color: var(--card-color);
+  padding: 1.5rem 1rem;
+  border-right: 1px solid #e5e7eb;
+
+  ul {
+    list-style: none;
+
+    li {
+      margin-bottom: 1rem;
+
+      a, button {
+        display: block;
+        width: 100%;
+        text-align: left;
+        padding: 0.5rem 1rem;
+        border-radius: 6px;
+        background: none;
+        color: var(--text-color);
+        font-weight: 500;
+        cursor: pointer;
+      }
+
+      a:hover, button:hover {
+        background-color: rgba(0, 0, 0, 0.05);
+      }
+    }
+  }
+}

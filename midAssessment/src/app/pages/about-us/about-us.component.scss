@@ -1,0 +1,29 @@
+.about-container {
+  text-align: center;
+  margin-top: 4rem;
+
+  .logo {
+    width: 150px;
+    margin-bottom: 1rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+    color: #222;
+    margin-bottom: 1rem;
+  }
+
+  p {
+    font-size: 1.1rem;
+    margin: 0.5rem 0;
+
+    a {
+      color: #007bff;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}

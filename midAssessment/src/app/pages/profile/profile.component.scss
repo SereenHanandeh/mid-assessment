@@ -1,14 +1,39 @@
+
+
+/* الحاوية */
 .profile-container {
   text-align: center;
-  margin-top: 4rem;
+  background-color: #fff;
+  padding: 40px 30px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 0.8s ease-in-out;
+}
 
-  .logo {
-    width: 150px;
-    margin-bottom: 1rem;
+/* الصورة */
+.profile-container .logo {
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
+  margin-bottom: 20px;
+  border-radius: 50%;
+  border: 3px solid #74ebd5;
+  padding: 5px;
+  background-color: #fff;
+}
+
+.profile-container h1 {
+  font-size: 24px;
+  color: #333;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
   }
-
-  h1 {
-    font-size: 2rem;
-    color: #333;
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }

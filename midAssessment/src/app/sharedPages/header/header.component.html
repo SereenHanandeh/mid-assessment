@@ -1,15 +1,19 @@
-<header class="header">
-  <div class="welcome">
-    Welcome, {{ isLoggedIn ? userName : 'Guest' }}
+<header class="top-header">
+  <div class="left-side">
+    <p>Welcome, {{ isLoggedIn ? userName : "guest" }}</p>
   </div>
 
-  <div class="header-actions">
+  <div class="right-side">
     <button (click)="toggleTheme()">
       {{ isDarkMode ? "Light Mode" : "Dark Mode" }}
     </button>
-    <button (click)="toggleLogin()">
-      {{ isLoggedIn ? "Logout" : "Login" }}
-      <app-login></app-login>
-    </button>
+    <button (click)="toggleLoginForm()">Login</button>
   </div>
 </header>
+
+@if(showLoginForm){
+<app-login></app-login>
+<div class="login-overlay">
+  <app-login (loginEvent)="onLoginData($event)"></app-login>
+</div>
+}

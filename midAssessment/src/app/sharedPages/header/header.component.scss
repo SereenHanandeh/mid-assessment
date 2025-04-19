@@ -1,8 +1,37 @@
-.welcome-text {
-    font-size: 1rem;
-    font-weight: 500;
-    margin-right: auto;
-    margin-left: 1rem;
-    color: #555;
+.top-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 8px 20px;
+  border-bottom: 1px solid black;
+  background-color: white;
+  z-index: 999;
+
+  .left-side {
+    font-weight: bold;
+    font-size: 15px;
   }
-  
+
+  .right-side {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    button {
+      padding: 5px 10px;
+      border: 1px solid black;
+      background-color: white;
+      cursor: pointer;
+
+      &:hover {
+        background-color: #f0f0f0;
+      }
+    }
+  }
+}

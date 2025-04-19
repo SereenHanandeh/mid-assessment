@@ -1,7 +1,6 @@
-<nav class="sidebar">
-  <app-logo></app-logo>
-
-  <div class="sidebar-buttons">
+<div class="layout">
+  <nav class="sidebar">
+    <app-logo class="logo"></app-logo>
     <button (click)="showComponent('profile')">My Profile</button>
     <button (click)="showComponent('contactUs')">Contact Us</button>
     <button (click)="showComponent('about-us')">About Us</button>
@@ -9,17 +8,22 @@
     <button (click)="showComponent('get-universities')">
       Get Universities
     </button>
-  </div>
+  </nav>
 
-  @if (currentPage === 'profile') {
-  <app-profile></app-profile>
-  } @else if (currentPage === 'contactUs') {
-  <app-contact-us></app-contact-us>
-  } @else if (currentPage === 'about-us') {
-  <app-about-us></app-about-us>
-  } @else if (currentPage === 'add-user') {
-  <app-add-user></app-add-user>
-  } @else if (currentPage === 'get-universities') {
-  <app-get-universities></app-get-universities>
-  }
-</nav>
+  <!-- Main Content -->
+  <div class="content">
+    @if (currentPage === 'profile') {
+    <app-profile></app-profile>
+    } @else if (currentPage === 'contactUs') {
+    <app-contact-us></app-contact-us>
+    } @else if (currentPage === 'about-us') {
+    <app-about-us></app-about-us>
+    } @else if (currentPage === 'add-user') {
+    <app-add-user></app-add-user>
+    } @else if (currentPage === 'get-universities') {
+    <app-get-universities></app-get-universities>
+    } @else {
+    <p class="placeholder-text">Please select a section from the sidebar.</p>
+    }
+  </div>
+</div>

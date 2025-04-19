@@ -1,0 +1,25 @@
+// app-logo.component.scss
+.logo-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+
+  img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    // border-radius: 50%;
+    border: 2px solid #ccc;
+    background-color: #fff;
+    padding: 5px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  h2 {
+    margin-top: 10px;
+    font-size: 20px;
+    color: #333;
+    font-weight: bold;
+  }
+}

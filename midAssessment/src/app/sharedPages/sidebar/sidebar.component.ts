@@ -9,7 +9,7 @@ import { GetUniversitiesComponent } from "../../pages/get-universities/get-unive
 
 @Component({
   selector: 'app-sidebar',
-  imports: [LogoComponent, ProfileComponent, ContactUsComponent, AboutUsComponent, AddUserComponent, GetUniversitiesComponent],
+  imports: [ProfileComponent, ContactUsComponent, AboutUsComponent, AddUserComponent, GetUniversitiesComponent, LogoComponent],
   templateUrl: './sidebar.component.html',
   styleUrl: './sidebar.component.scss'
 })

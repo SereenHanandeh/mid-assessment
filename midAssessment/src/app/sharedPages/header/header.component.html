@@ -4,16 +4,23 @@
   </div>
 
   <div class="right-side">
-    <button (click)="toggleTheme()">
-      {{ isDarkMode ? "Light Mode" : "Dark Mode" }}
+    <button class="theme-toggle" (click)="toggleTheme()">
+      @if (!isDarkMode) {
+      <span>☀️</span>
+      }@else if (isDarkMode) {
+      <span>🌙</span>
+      }
     </button>
-    <button (click)="toggleLoginForm()">Login</button>
+    <button (click)="toggleLoginForm()" style="margin-left: -10px">
+      Login
+    </button>
   </div>
 </header>
 
-@if(showLoginForm){
-<app-login></app-login>
+@if (showLoginForm) {
 <div class="login-overlay">
-  <app-login (loginEvent)="onLoginData($event)"></app-login>
+  <div class="login-wrapper">
+    <app-login (loginEvent)="onLoginData($event)"></app-login>
+  </div>
 </div>
 }

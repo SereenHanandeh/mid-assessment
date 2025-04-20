@@ -10,7 +10,6 @@
     </button>
   </nav>
 
-  <!-- Main Content -->
   <div class="content">
     @if (currentPage === 'profile') {
     <app-profile></app-profile>
@@ -22,8 +21,7 @@
     <app-add-user></app-add-user>
     } @else if (currentPage === 'get-universities') {
     <app-get-universities></app-get-universities>
-    } @else {
-    <p class="placeholder-text">Please select a section from the sidebar.</p>
-    }
-  </div>
+    }@else {
+      <p class="placeholder-text">Please click Login to Continue.</p>
+      }
 </div>

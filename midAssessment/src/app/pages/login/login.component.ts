@@ -10,15 +10,15 @@ import { FormsModule } from '@angular/forms';
   styleUrl: './login.component.scss',
 })
 export class LoginComponent {
-  email: string = '';
-  password: string = '';
+  email = '';
+  password = '';
 
   @Output() loginEvent = new EventEmitter<{
     email: string;
     password: string;
   }>();
 
-  onLogin() {
+  submitLogin() {
     this.loginEvent.emit({ email: this.email, password: this.password });
   }
 }
